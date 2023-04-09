@@ -1,0 +1,61 @@
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?page=0&size=3
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Labday Rest API",
+    "description": "Re-learning about Rest API"
+}
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "testing done 2",
+    "description": "Testing done 2",
+    "done": true
+}
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Third task Labday Rest API",
+    "description": "Testing controllers file"
+}
+
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Fourth task Labday Rest API",
+    "description": "To show in daily"
+}
+
+###
+GET http://localhost:3000/api/tasks/642d7fdfaf1cfb0c0bb165df
+
+###
+DELETE http://localhost:3000/api/tasks/643083b8c1d47c3be4a25455
+
+###
+PUT http://localhost:3000/api/tasks/642d7337bcd314a3e0638b75
+Content-Type: application/json
+
+{
+    "title": "labday modified",
+    "description": "*******************************",
+    "done": true
+}
+
+###
